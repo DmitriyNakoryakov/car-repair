@@ -1,5 +1,5 @@
 #footer {
-  font-family: "Lato";
+  font-family: "Open Sans";
   .footer__body {
     padding: 80px 0px 60px 0px;
     background-color: #1e212c;
@@ -53,6 +53,9 @@
             }
             .footer__socials-img {
               cursor: pointer;
+              &:hover {
+                color: #ff3f3a;
+              }
             }
           }
         }

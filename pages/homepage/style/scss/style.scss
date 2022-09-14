@@ -38,6 +38,7 @@ body {
   @import "main.scss";
   @import "footer.scss";
   font-family: "Open-sans";
+  background-color: #f8f8f8;
 
   .wrapper {
     overflow: hidden;
@@ -46,6 +47,8 @@ body {
     @import "header.scss";
     @import "main.scss";
     @import "footer.scss";
+    font-family: "Open-sans";
+    background-color: #f8f8f8;
   }
 }
 @media (max-width: 1120px) {

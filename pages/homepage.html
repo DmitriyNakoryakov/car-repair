@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,195 +25,57 @@
   </head>
   <body>
     <header id="header">
-      <section class="modals">
-        <div class="modals__wrapper">
-          <div class="login__modal modal" data-modal="login__modal">
-            <h2 class="login__modal-title">Sign in</h2>
-            <p class="login__modal-descr">
-              Sign in to your account using email and password provided during
-              registration.
-            </p>
-            <form action="#" class="login__modal-form">
-              <div class="data__info-form__item">
-                <span class="data__form-item__text">Email</span>
-                <input
-                  type="email"
-                  required
-                  placeholder="Your working email"
-                  class="data__form-item__input"
-                />
-              </div>
-
-              <div class="data__info-form__item">
-                <span class="data__form-item__text">Password</span>
-                <input
-                  type="password"
-                  required
-                  placeholder="Your password"
-                  class="data__form-item__input"
-                />
-              </div>
-
-              <div class="login__modal-form__footer">
-                <div class="subscribe__info-checkbox">
-                  <input
-                    type="checkbox"
-                    id="agree"
-                    name="contact"
-                    value="email"
-                    class="subscribe__info-checkbox__input"
-                  />
-
-                  <label for="agree" class="subscribe__info-checkbox__label"
-                    >Keep me signed in</label
-                  >
-                </div>
-
-                <span class="login__form-footer__text">Forgot password?</span>
-              </div>
-
-              <button class="modal__button">Sign in</button>
-            </form>
-          </div>
-
-          <div class="register__modal modal" data-modal="register__modal">
-            <h2 class="login__modal-title">Sign up</h2>
-            <p class="login__modal-descr">
-              Registration takes less than a minute but gives you full control
-              over your studying.
-            </p>
-            <form action="#" class="login__modal-form">
-              <div class="data__info-form__item">
-                <span class="data__form-item__text">Full name</span>
-                <input
-                  type="email"
-                  required
-                  placeholder="Your full name"
-                  class="data__form-item__input"
-                />
-              </div>
-
-              <div class="data__info-form__item">
-                <span class="data__form-item__text">Email</span>
-                <input
-                  type="password"
-                  required
-                  placeholder="Your working email"
-                  class="data__form-item__input"
-                />
-              </div>
-
-              <div class="data__info-form__item">
-                <span class="data__form-item__text">Password</span>
-                <input
-                  type="password"
-                  required
-                  placeholder="Your password"
-                  class="data__form-item__input"
-                />
-              </div>
-
-              <div class="data__info-form__item">
-                <span class="data__form-item__text">Confirm password</span>
-                <input
-                  type="password"
-                  required
-                  placeholder="Repeat password"
-                  class="data__form-item__input"
-                />
-              </div>
-
-              <div class="subscribe__info-checkbox">
-                <input
-                  type="checkbox"
-                  id="agree"
-                  name="contact"
-                  value="email"
-                  class="subscribe__info-checkbox__input"
-                />
-
-                <label for="agree" class="subscribe__info-checkbox__label"
-                  >Remember me</label
-                >
-              </div>
-
-              <button class="modal__button">Sign up</button>
-            </form>
-          </div>
-        </div>
-      </section>
+      
       <div class="header__mobile"></div>
 
       <div class="header__container">
         <div class="header__top">
-          <div class="header__top-left">
+          <nav class="nav">
+          <div class="nav__logo">
             <img
               src="/pages/homepage/src/img/car-repair.png" 
               alt="logo"
-              class="header__top-left__img"
+              class="nav__logo__img"
             />
             
-            <nav class="header__top-left__menu">
-              <ul class="header__left-menu__list">
-                <li class="header__menu-list__item">
-                  <a href="aboutUs.html" class="header__list-item__link"
+            <nav class="nav__menu">
+              <ul class="nav__menu-list">
+                <li class="nav__menu-list__item">
+                  <a href="aboutUs.html" class="nav__list-item__link"
                     >Автосервис</a
                   >
                 </li>
-                <li class="header__menu-list__item">
-                  <a href="courses.html" class="header__list-item__link"
+                <li class="nav__menu-list__item">
+                  <a href="courses.html" class="nav__list-item__link"
                     >Мойка</a
                   >
                 </li>
-                <li class="header__menu-list__item">
-                  <a href="events.html" class="header__list-item__link"
+                <li class="nav__menu-list__item">
+                  <a href="events.html" class="nav__list-item__link"
                     >Прокат авто</a
                   >
                 </li>
-                <li class="header__menu-list__item">
-                  <a href="post.html" class="header__list-item__link"
+                <li class="nav__menu-list__item">
+                  <a href="post.html" class="nav__list-item__link"
                     >Услуги</a
                   ><!-- цены сюда же-->
                 </li>
-                <li class="header__menu-list__item">
-                  <a href="contacts.html" class="header__list-item__link"
+                <li class="nav__menu-list__item">
+                  <a href="contacts.html" class="nav__list-item__link"
                     >Контакты</a
                   >
                 </li>
-                <li class="header__menu-list__item">
-                  <a href="post.html" class="header__list-item__link"
+                <li class="nav__menu-list__item">
+                  <a href="post.html" class="nav__list-item__link"
                     >Акции</a
                   ><!-- пока что тут пусто-->
                 </li>
               </ul>
             </nav>
+            
           </div>
 
-          <div class="header__top-right">
-            <button class="header__top-right__button btn__homepage">
-              Get consultation
-            </button>
-            <div class="header__top-right__login">
-              <img
-                src="./homepage/src/icons/login.svg"
-                alt="log in"
-                class="header__right-login__img"
-              />
-              <div class="header__right-login__text">
-                <span
-                  class="header__login-text__login header__button"
-                  data-path__modal="login__modal"
-                  >Log in</span
-                >
-                /
-                <span
-                  class="header__login-text__register header__button"
-                  data-path__modal="register__modal"
-                  >Register</span
-                >
-              </div>
-            </div>
-          </div>
+         
 
           <div class="header__hamb">
             <div class="header__hamb-field">
@@ -222,30 +84,85 @@
               <span class="header__hamb-field__line"></span>
             </div>
           </div>
-        </div>
+        </nav>
 
-        <div class="header__center">
-          
-          <div class="header__center-right">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Justo, amet lectus quam viverra mus lobortis fermentum
-            amet, eu. Pulvinar eu sed purus facilisi. Vitae id
-            turpis tempus ornare turpis quis non. Congue tortor in
-            euismod vulputate etiam eros. Pulvinar neque pharetra
-            arcu diam maecenas diam integer in. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Justo, amet lectus quam viverra mus lobortis fermentum
-            amet, eu. Pulvinar eu sed purus facilisi. Vitae id
-            turpis tempus ornare turpis quis non. Congue tortor in
-            euismod vulputate etiam eros. Pulvinar neque pharetra
-            arcu diam maecenas diam integer in.
+          <div class="header__center">
+            <div class="header__center-left">
+              <h1 class="header__center-left__title">
+                Получайте качественные услуги в автокомплексе
+              </h1>
+              <div class="header__center-left__buttons">
+                <button class="header__button-button__left btn__homepage">
+                  О нас
+                </button>
+                <button class="header__button-right__button btn__homepage">
+                  О наших работах
+                </button>
+              </div>
+            </div>
+            <div class="header__center-right">
+              <img
+                src="./homepage/src/img/mainHeader.jpg"
+                alt="image"
+                class="header__center-right__img"
+              />
+            </div>
+            
           </div>
+        </div>
         </div>
         
       </div>
     </header>
     <div class="wrapper">
-
       <main id="main">
+        
+        <section class="specialization">
+          <div class="specialization__container">
+          <p class="specialization__text-title">
+              Наши основные направления деятельности
+          </p>
+          <div class="specialization__body">
+              <div class="specialization__column">
+                  <a href="#" class="specialization__link-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/specialization/specialization-1.jpg);">
+                      <div class="specialization__info">
+                          <p class="specialization__text">                 
+                              Прокат авто
+                          </p>
+                          <div class="specialization__more">
+                              <b>Подробнее</b>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="specialization__column">
+                  <a href="#" class="specialization__link-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/specialization/specialization-2.jpg);">
+                      <div class="specialization__info">
+                          <p class="specialization__text">                 
+                              Автомойка
+                          </p>
+                          <div class="specialization__more">
+                              <b>Подробнее</b>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="specialization__column">
+                  <a href="#" class="specialization__link-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/specialization/specialization-3.jpg);">
+                      <div class="specialization__info">
+                          <p class="specialization__text">                 
+                              Автосервис
+                          </p>
+                          <div class="specialization__more">
+                              <b>Подробнее</b>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          </div>
+      </section>
+
         <section class="values">
           <div class="values__container">
             <div class="values__header">
@@ -334,7 +251,7 @@
                 </div>
                 <div class="steps__body-item__body">
                   <h6 class="steps-item__body-title">
-                    Watching online video lectures
+                    Найти в интернете
                   </h6>
                   <p class="steps-item__body-descr">
                     Culpa nostrud commodo ea consequat aliquip reprehenderit.
@@ -349,7 +266,7 @@
                   <div class="steps-item__header-line"></div>
                 </div>
                 <div class="steps__body-item__body">
-                  <h6 class="steps-item__body-title">Passing test</h6>
+                  <h6 class="steps-item__body-title">Позвонить нам</h6>
                   <p class="steps-item__body-descr">
                     Anim reprehenderit sint voluptate exercitation adipisicing
                     laborum adipisicing. Minim ad tempor est ea.
@@ -363,7 +280,7 @@
                   <div class="steps-item__header-line"></div>
                 </div>
                 <div class="steps__body-item__body">
-                  <h6 class="steps-item__body-title">Curator’s feedback</h6>
+                  <h6 class="steps-item__body-title">Приехать к нам</h6>
                   <p class="steps-item__body-descr">
                     Adipisicing esse aliqua aliquip qui amet. Aute eiusmod
                     dolore dolore et ad et veniam ad deserunt.
@@ -377,7 +294,7 @@
                   <div class="steps-item__header-line"></div>
                 </div>
                 <div class="steps__body-item__body">
-                  <h6 class="steps-item__body-title">Corrections if needed</h6>
+                  <h6 class="steps-item__body-title">Получить услугу</h6>
                   <p class="steps-item__body-descr">
                     Sit veniam aute dolore adipisicing nulla sit culpa. Minim
                     mollit voluptate ullamco proident ea ad.
@@ -595,9 +512,9 @@
                   />
                 </div>
                 <div class="team__cards-card__content">
-                  <span class="team__card-content__name">Dianne Russell</span>
+                  <span class="team__card-content__name">Евгений Иванович</span>
                   <span class="team__card-content__position"
-                    >Founder and CEO</span
+                    >Главный</span
                   >
                 </div>
               </div>
@@ -611,9 +528,9 @@
                   />
                 </div>
                 <div class="team__cards-card__content">
-                  <span class="team__card-content__name">Jerome Bell</span>
+                  <span class="team__card-content__name">Иван Иванович</span>
                   <span class="team__card-content__position"
-                    >Founder and Program Director</span
+                    >Не главный</span
                   >
                 </div>
               </div>
@@ -627,9 +544,9 @@
                   />
                 </div>
                 <div class="team__cards-card__content">
-                  <span class="team__card-content__name">Kristin Watson</span>
+                  <span class="team__card-content__name">Алексей Петрович</span>
                   <span class="team__card-content__position"
-                    >Marketer, Curator of Marketing Course</span
+                    >Бухглатер</span
                   >
                 </div>
               </div>
@@ -863,10 +780,63 @@
             </div>
           </div>
         </section>
-        <section class="map">
-          <div class="map__container">
-            <script type="text/javascript" charset="utf-8"
+        
+        <section class="contacts">
+          <div class="contacts__container">
+            <div class="contacts__info">
+              <div class="contacts__info-header">
+                <h2 class="contacts__info-header__title">Контакты</h2>
+              </div>
+
+              <div class="contacts__info-body">
+                <div class="contacts__info-body__item">
+                  <span class="contacts__body-item__text">Напишите нам</span>
+                  <span class="contacts__body-item__data"
+                    >auto-complex@gmail.com</span
+                  >
+                </div>
+
+                <div class="contacts__info-body__item">
+                  <span class="contacts__body-item__text">Позвоните нам</span>
+                  <span class="contacts__body-item__data">+7 (000) - 000 - 00 - 00</span>
+                </div>
+
+                <div class="contacts__info-body__item">
+                  <span class="contacts__body-item__text">Адрес</span>
+                  <span class="contacts__body-item__data"
+                    >Кемерово, Волгоградская улица, 37к1</span
+                  >
+                </div>
+              </div>
+
+              <div class="contacts__info-footer">
+                <h4 class="contacts__info-footer__title">Наши социальные сети:</h4>
+                <div class="contacts__footer-img__box">
+                  <img
+                    src="./contacts/src/icons/facebook.svg"
+                    alt="Вконтакте"
+                    class="contacts__footer-img"
+                  />
+
+                  <img
+                    src="./contacts/src/icons/telegram.svg"
+                    alt="telegram"
+                    class="contacts__footer-img"
+                  />
+
+                  <img
+                    src="./contacts/src/icons/insta.svg"
+                    alt="insta"
+                    class="contacts__footer-img"
+                  />
+                  
+              </div>
+            </div>
+            </div>
+            <div class='contacts__map'>
+            <script class='contacts__img' type="text/javascript" charset="utf-8"
             async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A05682bf9267c5b74e0a47ddb5e3f7f3386f192ed1a2b89e97ac9da670726e197&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
           </div>
         </section>
       </main>
@@ -877,7 +847,7 @@
             <div class="footer__body-left">
               <div class="footer__left-img__box">
                 <img
-                  src="./homepage/src/icons/footer/logo.svg"
+                  src=""
                   alt="logo"
                   class="footer__left-img"
                 />
@@ -958,7 +928,7 @@
 
             <div class="footer__body-newsletter">
               <span class="footer__body-newsletter__title"
-                >SIGN UP TO OUR NEWSLETTER</span
+                >Подпишитесь на нашу рассылку</span
               >
               <input
                 type="email"
@@ -966,8 +936,7 @@
                 class="footer__body-newsletter__input"
               />
               <p class="footer__body-newsletter__warning">
-                *Subscribe to our newsletter to receive communications and early
-                updates from Createx SEO Agency.
+              
               </p>
             </div>
           </div>
@@ -982,7 +951,7 @@
                 alt="heart"
                 class="footer__footer-left__img"
               />
-              by Createx Studio
+              by Dimon
             </p>
             <a class="footer__footer-right" href="#header">Вернуться на верх</a>
           </div>
